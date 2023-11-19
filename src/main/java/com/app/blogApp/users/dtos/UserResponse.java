@@ -1,11 +1,9 @@
 package com.app.blogApp.users.dtos;
 
-import jakarta.persistence.Column;
 import lombok.Data;
-import lombok.NonNull;
 
 @Data
-public class CreateUserResponse {
+public class UserResponse {
     private Long id;
     private String username;
     private String email;

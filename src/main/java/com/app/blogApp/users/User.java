@@ -7,7 +7,7 @@ import lombok.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
+//@Builder
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,6 +16,10 @@ public class User {
     @Column(nullable = false)
     @NonNull
     private String username;
+
+    @Column(nullable = false)
+    @NonNull
+    private String password;
 
     @Column(nullable = false)
     @NonNull
